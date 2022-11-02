@@ -1,1 +1,1 @@
-# media-player-app
+# media recording and playing app
