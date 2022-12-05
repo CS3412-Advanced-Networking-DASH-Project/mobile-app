@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Streamer</string>
     <string name="streamer">Streamer</string>
+    <string name="video_title">VIDEO TITLE</string>
+    <string name="video_description">VIDEO DESCRIPTION</string>
+    <string name="cancel">Cancel</string>
+    <string name="upload">Upload</string>
+    <string name="watch_videos_in_store">Watch Videos in Store</string>
+    <string name="record_new_video">Record new video</string>
 </resources>
