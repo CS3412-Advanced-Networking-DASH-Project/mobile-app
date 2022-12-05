@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //record a vide
+    //record a video
     private void recordVideo() {
         Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
         startActivityForResult(intent, VIDEO_RECORD_CODE);
@@ -76,9 +76,10 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == VIDEO_RECORD_CODE) {
             if (resultCode == RESULT_OK) {
                 videoUri = data.getData();
-                Intent intent = new Intent(this, VideoViewActivity.class);
-                intent.putExtra("VIDEO_URI", videoUri.toString());
-                startActivity(intent);
+//                Intent intent = new Intent(this, VideoViewActivity.class);
+//                Intent intent = new Intent(this, VideoUploadActivity.class);
+//                intent.putExtra("VIDEO_URI", videoUri.toString());
+//                startActivity(intent);
                 Log.i("VIDEO_RECORD_TAG", "Video saved to: " + videoUri.toString());
             } else if (resultCode == RESULT_CANCELED) {
                 Log.i("VIDEO_RECORD_TAG", "Video recording cancelled");

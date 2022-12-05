@@ -1,41 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainActivity">
+    android:background="#232f34"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
+    <RelativeLayout
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/streamer"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#117BA8"
+            android:textSize="90px"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="0.3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Media Streaming Application"
-        android:textAlignment="center"
-        android:textSize="90px"
-        android:textColor="#595656"
-        android:fontFamily="sans-serif-smallcaps"
-        android:textStyle="bold"
-        android:layout_margin="20dp"/>
+        android:background="@drawable/background2">
 
-    <Button
-        android:id="@+id/viewButton"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="#80ffffff"
-        android:text="Watch Videos in Store"
-        android:onClick="watchVideosButtonPressed"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/viewButton"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#F9AA33"
+            android:onClick="watchVideosButtonPressed"
+            android:text="Watch Videos in Store" />
 
-    <Button
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/viewButton"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:background="#80ffffff"
-        android:text="Record new video"
-        android:onClick="recordVideoButtonPressed"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewButton"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="#F9AA33"
+            android:text="Record new video"
+            android:onClick="recordVideoButtonPressed"/>
 
-</RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
 
