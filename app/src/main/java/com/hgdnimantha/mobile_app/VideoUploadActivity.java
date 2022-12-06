@@ -205,7 +205,7 @@ public class VideoUploadActivity extends AppCompatActivity {
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent contentIntent = PendingIntent.getActivity(this,0,notificationIntent,0);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this,id)
-                .setSmallIcon(R.mipmap.launcher_icon_02_round)
+                .setSmallIcon(R.mipmap.launcher_icon_03_round)
                 .setContentTitle(title)
                 .setContentText(desc)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
