@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoCard"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:onClick="cardOnClick">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#9C9C9C">
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/default_thumbnail"
+                    android:background="#494949"/>
+                <RelativeLayout
+                    android:layout_weight="0.4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/titleCard"
+                        android:layout_width="match_parent"
+                        android:text="TITLE"
+                        android:textAllCaps="true"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/descriptionCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleCard"
+                        android:layout_marginTop="10dp"
+                        android:text="Description" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>
